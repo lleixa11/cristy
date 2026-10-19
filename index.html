@@ -32,7 +32,7 @@
 <meta name="twitter:image:alt" content="Cristy Mobile Pet Grooming">
 
 <link rel="icon" type="image/svg+xml" href="assets/images/Logo_Cristy_3.svg">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/Logo_Cristy_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/Logo_Cristy_3.png">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1429,6 +1429,38 @@ video.svc-panel-bg{
 .contact-submit[disabled]{opacity:.6; cursor:wait; transform:none; box-shadow:0 5px 0 var(--pink);}
 .contact-submit-note{display:flex; align-items:center; gap:8px; justify-content:center; margin:0; font-size:.78rem; color:rgba(33,32,92,.55); font-weight:600;}
 .contact-submit-note svg{color:var(--pink); flex-shrink:0;}
+.contact-form-status{
+  display:none;
+  align-items:center;
+  gap:10px;
+  padding:14px 18px;
+  border-radius:14px 6px 12px 8px;
+  font-family:var(--body);
+  font-size:.88rem;
+  font-weight:700;
+  line-height:1.4;
+  margin-top:16px;
+  border:2px solid;
+}
+.contact-form-status.is-success{
+  display:flex;
+  background:#E7F6EC;
+  color:#1B5E20;
+  border-color:#2E7D32;
+  box-shadow:4px 4px 0 #2E7D32;
+}
+.contact-form-status.is-error{
+  display:flex;
+  background:#FDECEC;
+  color:#B71C1C;
+  border-color:#C62828;
+  box-shadow:4px 4px 0 #C62828;
+}
+.contact-form-status svg{
+  width:18px;
+  height:18px;
+  flex-shrink:0;
+}
 
 @media (max-width:900px){
   .contact{padding:90px 0 110px;}
@@ -2011,26 +2043,27 @@ video.svc-panel-bg{
         </div>
       </article>
 
-      <!-- 04 — Teeth cleaning -->
-      <article class="svc-panel" tabindex="0" role="button" aria-label="Teeth cleaning service">
-        <video class="svc-panel-bg" muted loop playsinline preload="none"
-               poster="assets/images/service5.webp"
-               aria-label="Cristy brushing a dog's teeth">
-          <source data-src="assets/videos/svc-04-teeth-cleaning.mp4" type="video/mp4">
-        </video>
-        <div class="svc-panel-overlay"></div>
-        <span class="svc-panel-num">04</span>
-        <svg class="svc-panel-icon" width="20" height="20" aria-hidden="true"><use href="#i-heart"/></svg>
-        <div class="svc-panel-vert">Teeth cleaning</div>
-        <div class="svc-panel-body">
-          <h3>Teeth cleaning</h3>
-          <p>Gentle brushing to help keep breath fresh between vet visits.</p>
-          <a href="https://booking.moego.pet/ol/landing?name=Cristypetgrooming"
-             target="_blank" rel="noopener" class="svc-panel-btn">
-            Book this <svg width="13" height="13" aria-hidden="true"><use href="#i-arrow-diag"/></svg>
-          </a>
-        </div>
-      </article>
+      <!-- 04 — Teeth cleaning (image only) -->
+<article class="svc-panel" tabindex="0" role="button" aria-label="Teeth cleaning service">
+  <img class="svc-panel-bg"
+       src="assets/images/service5.webp"
+       alt="Cristy brushing a dog's teeth"
+       loading="lazy"
+       decoding="async"
+       width="800" height="1000">
+  <div class="svc-panel-overlay"></div>
+  <span class="svc-panel-num">04</span>
+  <svg class="svc-panel-icon" width="20" height="20" aria-hidden="true"><use href="#i-heart"/></svg>
+  <div class="svc-panel-vert">Teeth cleaning</div>
+  <div class="svc-panel-body">
+    <h3>Teeth cleaning</h3>
+    <p>Gentle brushing to help keep breath fresh between vet visits.</p>
+    <a href="https://booking.moego.pet/ol/landing?name=Cristypetgrooming"
+       target="_blank" rel="noopener" class="svc-panel-btn">
+      Book this <svg width="13" height="13" aria-hidden="true"><use href="#i-arrow-diag"/></svg>
+    </a>
+  </div>
+</article>
 
       <!-- 05 — Cat grooming -->
       <article class="svc-panel" tabindex="0" role="button" aria-label="Cat grooming service">
@@ -2803,12 +2836,12 @@ video.svc-panel-bg{
         <span class="roam-bottom-script">don't see your area?</span>
         <p>We're always checking new routes.</p>
       </div>
-      <a href="#contact" class="roam-bottom-btn">
-        Ask us about your area
-        <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
-          <use href="#i-arrow-diag"></use>
-        </svg>
-      </a>
+<a href="https://wa.me/13058123108?text=Hi%20Cristy!%20Do%20you%20cover%20my%20area%3F" target="_blank" rel="noopener" class="roam-bottom-btn" aria-label="Ask us about your area on WhatsApp">
+  Ask us about your area
+  <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
+    <use href="#i-chat"></use>
+  </svg>
+</a>
     </div>
   </div>
   <div class="curve-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path class="fill-cream" d="M0,55 C340,110 1100,-15 1440,50 L1440,100 L0,100 Z"/></svg></div>
@@ -2934,10 +2967,10 @@ video.svc-panel-bg{
           <span>Still have a question? We're happy to help.</span>
         </div>
 
-        <a href="#contact" class="faq-cta">
-          Ask us / Book a groom
-          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-diag"></use></svg>
-        </a>
+<a href="https://wa.me/13058123108?text=Hi%20Cristy!%20I%20have%20a%20question%20about%20grooming." target="_blank" rel="noopener" class="faq-cta" aria-label="Ask us on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chat"></use></svg>
+  Ask us on WhatsApp
+</a>
       </div>
     </div>
   </div>
@@ -3068,71 +3101,96 @@ video.svc-panel-bg{
         <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
       </span>
 
-      <form id="bookForm" action="https://formspree.io/f/TU_FORM_ID" method="POST">
-        <div class="field-row">
-          <div class="field">
-            <label for="bf-name" class="field-label">Your name</label>
-            <input id="bf-name" name="name" type="text" placeholder="Jane Doe" required autocomplete="name">
-          </div>
-          <div class="field">
-            <label for="bf-pet" class="field-label">Pet's name</label>
-            <input id="bf-pet" name="pet_name" type="text" placeholder="Buddy" required>
-          </div>
-        </div>
+      <form id="bookForm" action="https://formspree.io/f/xeaedvjz" method="POST" novalidate>
 
-        <div class="field-row">
-          <div class="field">
-            <label for="bf-phone" class="field-label">Phone</label>
-            <input id="bf-phone" name="phone" type="tel" placeholder="(555) 123-4567" required autocomplete="tel">
-          </div>
-          <div class="field">
-            <label for="bf-date" class="field-label">Preferred date</label>
-            <input id="bf-date" name="preferred_date" type="date">
-          </div>
-        </div>
+  <!-- Anti-spam honeypot (oculto, los usuarios reales no lo ven) -->
+  <input
+    type="text"
+    name="_gotcha"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+    style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;">
 
-        <div class="field">
-          <span class="field-label">What do they need?</span>
-          <div class="svc-select" role="group" aria-label="What does your pet need?">
-            <button type="button" class="svc-pill active" data-service="Bath only" aria-pressed="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
-              Bath only
-            </button>
-            <button type="button" class="svc-pill" data-service="Full grooming" aria-pressed="false">
-              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-paw"/></svg>
-              Full grooming
-            </button>
-            <button type="button" class="svc-pill" data-service="Mini grooming" aria-pressed="false">
-              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-star"/></svg>
-              Mini grooming
-            </button>
-            <button type="button" class="svc-pill" data-service="Teeth cleaning" aria-pressed="false">
-              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
-              Teeth
-            </button>
-            <button type="button" class="svc-pill svc-pill-wide" data-service="Cat grooming" aria-pressed="false">
-              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-paw"/></svg>
-              Cat grooming
-            </button>
-          </div>
-        </div>
-        <input type="hidden" id="bf-service" name="service" value="Bath only">
+  <!-- Asunto que aparecerá en el email que recibe Dayana -->
+  <input
+    type="hidden"
+    name="_subject"
+    value="New grooming request — Cristy Mobile Pet Grooming">
 
-        <div class="field">
-          <label for="bf-notes" class="field-label">Anything we should know? <span class="field-optional">(optional)</span></label>
-          <textarea id="bf-notes" name="notes" placeholder="Breed, size, temperament, anything special about your pup..."></textarea>
-        </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="bf-name" class="field-label">Your name</label>
+      <input id="bf-name" name="name" type="text" placeholder="Jane Doe"
+             required minlength="2" maxlength="100" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="bf-pet" class="field-label">Pet's name</label>
+      <input id="bf-pet" name="pet_name" type="text" placeholder="Buddy"
+             required minlength="1" maxlength="60" autocomplete="off">
+    </div>
+  </div>
 
-        <button type="submit" class="contact-submit">
-          <span>Request my appointment</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-diag"/></svg>
-        </button>
+  <div class="field-row">
+    <div class="field">
+      <label for="bf-phone" class="field-label">Phone</label>
+      <input id="bf-phone" name="phone" type="tel" placeholder="(555) 123-4567"
+             required autocomplete="tel" inputmode="tel"
+             pattern="[0-9\s\-\+\(\)\.]{7,25}"
+             title="Please enter a valid phone number (e.g., (305) 812-3108)">
+    </div>
+    <div class="field">
+      <label for="bf-date" class="field-label">Preferred date <span class="field-optional">(optional)</span></label>
+      <input id="bf-date" name="preferred_date" type="date">
+    </div>
+  </div>
 
-        <p class="contact-submit-note" aria-live="polite">
-          <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
-          We'll text or call you back to confirm a time.
-        </p>
-      </form>
+  <div class="field">
+    <span class="field-label">What do they need?</span>
+    <div class="svc-select" role="group" aria-label="What does your pet need?">
+      <button type="button" class="svc-pill active" data-service="Bath only" aria-pressed="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        Bath only
+      </button>
+      <button type="button" class="svc-pill" data-service="Full grooming" aria-pressed="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-paw"/></svg>
+        Full grooming
+      </button>
+      <button type="button" class="svc-pill" data-service="Mini grooming" aria-pressed="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-star"/></svg>
+        Mini grooming
+      </button>
+      <button type="button" class="svc-pill" data-service="Teeth cleaning" aria-pressed="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
+        Teeth
+      </button>
+      <button type="button" class="svc-pill svc-pill-wide" data-service="Cat grooming" aria-pressed="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-paw"/></svg>
+        Cat grooming
+      </button>
+    </div>
+  </div>
+  <input type="hidden" id="bf-service" name="service" value="Bath only">
+
+  <div class="field">
+    <label for="bf-notes" class="field-label">Anything we should know? <span class="field-optional">(optional)</span></label>
+    <textarea id="bf-notes" name="notes" maxlength="1000"
+              placeholder="Breed, size, temperament, anything special about your pup..."></textarea>
+  </div>
+
+  <button type="submit" class="contact-submit">
+    <span>Request my appointment</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-diag"/></svg>
+  </button>
+
+  <p class="contact-submit-note">
+    <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
+    We'll text or call you back to confirm a time.
+  </p>
+
+  <div id="formStatus" class="contact-form-status" role="status" aria-live="polite" aria-atomic="true"></div>
+
+</form>
     </div>
 
   </div>
@@ -3302,44 +3360,119 @@ video.svc-panel-bg{
     });
   });
 
-  /* FORM — Formspree submit */
-  const bookForm = document.getElementById('bookForm');
-  if (bookForm) {
-    bookForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const btn = bookForm.querySelector('.contact-submit');
-      const label = btn.querySelector('span');
-      const originalText = label.textContent;
+/* =========================================================
+   BOOKING FORM — submit con Formspree
+   ========================================================= */
+(function(){
+  const bookForm    = document.getElementById('bookForm');
+  if (!bookForm) return;
 
-      btn.disabled = true;
-      label.textContent = 'Sending...';
+  const btn         = bookForm.querySelector('.contact-submit');
+  const label       = btn.querySelector('span');
+  const status      = document.getElementById('formStatus');
+  const dateInput   = document.getElementById('bf-date');
+  const gotcha      = bookForm.querySelector('[name="_gotcha"]');
+  const originalTxt = label.textContent;
 
-      try {
-        const res = await fetch(bookForm.action, {
-          method: 'POST',
-          body: new FormData(bookForm),
-          headers: { 'Accept': 'application/json' }
-        });
+  /* ---------- Fecha mínima = hoy ---------- */
+  if (dateInput){
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm   = String(today.getMonth() + 1).padStart(2, '0');
+    const dd   = String(today.getDate()).padStart(2, '0');
+    dateInput.setAttribute('min', `${yyyy}-${mm}-${dd}`);
+  }
 
-        if (res.ok) {
-          label.textContent = 'Request sent ✓';
-          bookForm.reset();
+  /* ---------- Status helpers ---------- */
+  const ICON_SUCCESS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
+  const ICON_ERROR   = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><circle cx="12" cy="16" r=".6" fill="currentColor"/></svg>';
+
+  function showStatus(type, message){
+    if (!status) return;
+    status.className = 'contact-form-status is-' + type;
+    status.innerHTML = (type === 'success' ? ICON_SUCCESS : ICON_ERROR)
+                     + '<span>' + message + '</span>';
+  }
+
+  function hideStatus(){
+    if (!status) return;
+    status.className = 'contact-form-status';
+    status.innerHTML = '';
+  }
+
+  /* ---------- Submit ---------- */
+  bookForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (btn.disabled) return;
+
+    /* Honeypot: si un bot lo rellenó, fingimos éxito sin enviar */
+    if (gotcha && gotcha.value){
+      showStatus('success', 'Request sent successfully! We\'ll text or call you back to confirm a time.');
+      return;
+    }
+
+    /* Validación nativa (reportValidity muestra el tooltip del navegador) */
+    if (!bookForm.checkValidity()){
+      bookForm.reportValidity();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.setAttribute('aria-busy', 'true');
+    label.textContent = 'Sending…';
+    hideStatus();
+
+    try {
+      const res = await fetch(bookForm.action, {
+        method: 'POST',
+        body: new FormData(bookForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok){
+        label.textContent = 'Request sent ✓';
+        showStatus('success', 'Request sent successfully! We\'ll text or call you back to confirm a time.');
+
+        bookForm.reset();
+
+        /* Resetear pills al default */
+        if (typeof svcPills !== 'undefined' && svcPills){
           svcPills.forEach((b, i) => {
             b.classList.toggle('active', i === 0);
             b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
           });
-          if (svcHidden) svcHidden.value = 'Bath only';
-          setTimeout(() => { label.textContent = originalText; btn.disabled = false; }, 3000);
-        } else {
-          throw new Error('Send failed');
         }
-      } catch (err) {
-        label.textContent = 'Something went wrong';
-        btn.disabled = false;
-        setTimeout(() => { label.textContent = originalText; }, 3000);
+        if (svcHidden) svcHidden.value = 'Bath only';
+
+        setTimeout(() => {
+          label.textContent = originalTxt;
+          btn.disabled = false;
+          btn.removeAttribute('aria-busy');
+        }, 5000);
+
+      } else {
+        let msg = 'Something went wrong. Please try again or call us at (305) 812-3108.';
+        try {
+          const data = await res.json();
+          if (data && Array.isArray(data.errors) && data.errors.length){
+            msg = data.errors.map(err => err.message).join(' · ');
+          }
+        } catch(_){ /* respuesta no JSON */ }
+        throw new Error(msg);
       }
-    });
-  }
+
+    } catch (err){
+      label.textContent = 'Try again';
+      showStatus('error', err.message || 'Could not send. Please try again or call us.');
+      btn.disabled = false;
+      btn.removeAttribute('aria-busy');
+
+      setTimeout(() => {
+        label.textContent = originalTxt;
+      }, 4000);
+    }
+  });
+})();
 
   /* GALLERY */
   const gallery = document.querySelector('.gallery-experience');
